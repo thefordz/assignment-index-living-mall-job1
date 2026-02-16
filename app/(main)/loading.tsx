@@ -3,11 +3,9 @@ import { PokemonSectionSkeleton } from "@/features/pokemon/client/components/pok
 
 export default async function Loading() {
   return (
-    <div className="p-3">
-      <div className="space-y-3">
-        <PokemonGenerationSkeleton />
-        <PokemonSectionSkeleton />
-      </div>
+    <div className="space-y-3">
+      <PokemonGenerationSkeleton />
+      <PokemonSectionSkeleton />
     </div>
   );
 }
