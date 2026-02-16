@@ -12,7 +12,7 @@ export async function fetchGeneration(generation: number): Promise<Generation> {
 
   const data: GenerationAPIResponse = await res.json();
 
-  const pokemon_sepecies: PokemonSpecies[] = data.pokemon_species.map(
+  const pokemon_species: PokemonSpecies[] = data.pokemon_species.map(
     (pokemon) => {
       const id = extractIdFromPokemonSpecies(pokemon.url);
 
@@ -26,6 +26,6 @@ export async function fetchGeneration(generation: number): Promise<Generation> {
   return {
     id: data.id,
     name: data.name,
-    pokemon_sepecies,
+    pokemon_species,
   };
 }

@@ -30,7 +30,7 @@ export type PokemonSpecies = {
 export type Generation = {
   id: number;
   name: string;
-  pokemon_sepecies: PokemonSpecies[];
+  pokemon_species: PokemonSpecies[];
 };
 
 export type Ability = {
